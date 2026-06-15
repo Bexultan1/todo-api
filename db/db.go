@@ -13,7 +13,7 @@ import (
 var DB *sqlx.DB
 
 func Connect() {
-	godotenv.Load(".env")
+	godotenv.Load("env")
 	host := os.Getenv("DB_HOST")
 	port := os.Getenv("DB_PORT")
 	user := os.Getenv("DB_USER")
